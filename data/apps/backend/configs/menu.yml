@@ -1,0 +1,8 @@
+menu:
+  models:
+    name: Контент // 0 // Статьи
+    link: moduleDefault:list/module=articles
+  #users:
+  #  icon: user
+  #  name: Администрирование // 0 // Пользователи
+  #  link: moduleDefault:list/module=users
