@@ -2,7 +2,7 @@
     <div class="article">
         <img class="img_article img-thumbnail" src="{{ article.image }}"/>
         <a class="title" href="#"><h2>{{ article.name }}</h2></a>
-        <p>{{ article.short_description }}<a class="link" href="view.twig?id={{ article.id }}">Show full article</a></p>
+        <p>{{ article.short_description }}<a class="link" href="view.twig?id={{ article.url }}">Show full article</a></p>
         <div style="clear:both;"></div>
     </div>
 {% endfor %}

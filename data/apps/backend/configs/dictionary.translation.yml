@@ -53,3 +53,4 @@ dictionary:
         full_description: ~ 
         isActive: ~ 
         userId: ~ 
+        url: ~ 
