@@ -9,7 +9,6 @@ class Controller_Home extends fvController
     function indexAction()
     {
         $this->view()->articles = Article::findAll();
-
     }
 
 }

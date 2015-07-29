@@ -2,69 +2,41 @@ dictionary:
   translations: 
     defaults: 
       fields: 
-        name: Имя 
-        surname: Фамилия 
-        url: Часть URL 
-        image: Картинка 
-        metaTitle: Мета-название 
-        metaDescription: Мета-описание 
-        metaKeywords: Ключевые слова 
-        isActive: Активен 
-        weight: Вес 
-        title: Заголовок 
-        forward: Вступление 
-        date: Дата 
-        text: Текст 
-        isDefault: По умолчанию 
-        translation: Перевод 
-        ctime: Cоздан 
-        mtime: Изменён 
-        keyword: Ключ 
-        login: Логин 
-        password: Пароль 
-        email: E-mail 
-        phone: Телефон 
-        userId: Пользователь 
+        name: Имя
+        surname: Фамилия
+        url: Часть URL
+        image: Картинка
+        metaTitle: Мета-название
+        metaDescription: Мета-описание
+        metaKeywords: Ключевые слова
+        isActive: Активен
+        weight: Вес
+        title: Заголовок
+        forward: Вступление
+        date: Дата
+        text: Текст
+        isDefault: По умолчанию
+        translation: Перевод
+        ctime: Cоздан
+        mtime: Изменён
+        keyword: Ключ
+        login: Логин
+        password: Пароль
+        email: E-mail
+        phone: Телефон
+        userId: Пользователь
         techUrl: ~ 
         role: ~ 
-        modelId: ~ 
-        price: ~ 
-        colorId: ~ 
-        dbHost: ~ 
-        dbUser: ~ 
-        dbPass: ~ 
-        dbName: ~ 
-        adminLogin: ~ 
-        adminPassword: ~ 
 
       validators: 
-        required: Это поле нужно заполнить 
-        uniq: Это поле должно быть уникально 
-        adminBundle\Form\FieldValidator\AdminPasswordCheck: ~ 
+        required: Это поле нужно заполнить
+        uniq: Это поле должно быть уникально
 
-    AdminBundle\Form\Auth\SignIn: 
-      labels: 
-        name: ~ 
-        submit: ~ 
-
+    Admin_Form: 
       fields: 
         login: ~ 
-        password: ~ 
-
-    AdminBundle\Form\Setup: 
-      labels: 
+        email: ~ 
         name: ~ 
-        submit: ~ 
-
-      fields: 
-        dbHost: ~ 
-        dbUser: ~ 
-        dbPass: ~ 
-        dbName: ~ 
-        adminLogin: ~ 
-        adminPassword: ~ 
-
-    Dictionary_Form: 
-      fields: 
-        keyword: ~ 
-        translation: ~ 
+        role: ~ 
+        ctime: ~ 
+        mtime: ~ 
