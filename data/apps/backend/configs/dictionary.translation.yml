@@ -2,35 +2,37 @@ dictionary:
   translations: 
     defaults: 
       fields: 
-        name: Имя
-        surname: Фамилия
-        url: Часть URL
-        image: Картинка
-        metaTitle: Мета-название
-        metaDescription: Мета-описание
-        metaKeywords: Ключевые слова
-        isActive: Активен
-        weight: Вес
-        title: Заголовок
-        forward: Вступление
-        date: Дата
-        text: Текст
-        isDefault: По умолчанию
-        translation: Перевод
-        ctime: Cоздан
-        mtime: Изменён
-        keyword: Ключ
-        login: Логин
-        password: Пароль
-        email: E-mail
-        phone: Телефон
-        userId: Пользователь
+        name: Имя 
+        surname: Фамилия 
+        url: Часть URL 
+        image: Картинка 
+        metaTitle: Мета-название 
+        metaDescription: Мета-описание 
+        metaKeywords: Ключевые слова 
+        isActive: Активен 
+        weight: Вес 
+        title: Заголовок 
+        forward: Вступление 
+        date: Дата 
+        text: Текст 
+        isDefault: По умолчанию 
+        translation: Перевод 
+        ctime: Cоздан 
+        mtime: Изменён 
+        keyword: Ключ 
+        login: Логин 
+        password: Пароль 
+        email: E-mail 
+        phone: Телефон 
+        userId: Пользователь 
         techUrl: ~ 
         role: ~ 
+        short_description: ~ 
+        full_description: ~ 
 
       validators: 
-        required: Это поле нужно заполнить
-        uniq: Это поле должно быть уникально
+        required: Это поле нужно заполнить 
+        uniq: Это поле должно быть уникально 
 
     Admin_Form: 
       fields: 
@@ -40,3 +42,14 @@ dictionary:
         role: ~ 
         ctime: ~ 
         mtime: ~ 
+        password: ~ 
+        isActive: ~ 
+
+    Article_Form: 
+      fields: 
+        name: ~ 
+        image: ~ 
+        short_description: ~ 
+        full_description: ~ 
+        isActive: ~ 
+        userId: ~ 

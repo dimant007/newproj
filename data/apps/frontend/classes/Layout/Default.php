@@ -9,6 +9,7 @@ class Layout_Default extends fvLayout
 
         $this->addCSS([
             "/theme/stylesheets/bootstrap.css",
+            "/theme/stylesheets/foundation.css",
             "/theme/stylesheets/style.css"
         ]);
 

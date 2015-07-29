@@ -1,8 +1,8 @@
 {% for article in articles %}
     <div class="article">
         <img class="img_article img-thumbnail" src="{{ article.image }}"/>
-        <a class="title" href="#"><h2>{{ article.title }}</h2></a>
-        <p>{{ article.short_description }}<a href="view.php?id={{ article.id }}">Show full article</a></p>
+        <a class="title" href="#"><h2>{{ article.name }}</h2></a>
+        <p>{{ article.short_description }}<a class="link" href="view.twig?id={{ article.id }}">Show full article</a></p>
         <div style="clear:both;"></div>
     </div>
-    {% endfor %}
+{% endfor %}

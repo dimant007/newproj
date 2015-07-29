@@ -7,14 +7,14 @@
     <title>{{ title }} {% if title %}—{% endif %} {{"Microblog"|translate}}</title>
 
     {% for sheet in this.getCss() %}
-        <link rel="stylesheet" href="{{ sheet.href }}" {% if sheet.media %}media="{{ sheet.media }}"{% endif %}/>
+        <link rel="stylesheet" type="text/css" href="{{ sheet.href }}"/>
     {% endfor %}
 </head>
 <body>
 <div class="container">
     <div class="row">
-        <a class="visible-xs" href="#"><img id="logo1" src="web/theme/images/head.jpg"/></a>
-        <a class="visible-lg visible-md visible-sm" href="#"><img id="logo2" src="web/theme/images/head.jpg"/></a>
+        <a class="visible-xs" href="#"><img id="logo1" src="/theme/images/head.jpg"/></a>
+        <a class="visible-lg visible-md visible-sm" href="#"><img id="logo2" src="/theme/images/head.jpg"/></a>
     </div>
     <div class="row">
         <div class="col-xs-12 content">
@@ -23,25 +23,21 @@
                     <div class="page">
                         {{ body | raw }}
                     </div>
-                    <div class="col-sm-2 right_menu">
-                        <a href="#">Главная</a>
-                        <a href="#">Статьи</a>
-                        <a href="#">Видео</a>
-                        <a href="#">Фотографии</a>
-                        <a href="#">Архив</a>
-                        <a href="#">Обратная связь</a>
-                    </div>
+                </div>
+                <div class="col-sm-2 right_menu">
+                    <a href="#">Главная</a>
+                    <a href="#">Статьи</a>
+                    <a href="#">Видео</a>
+                    <a href="#">Фотографии</a>
+                    <a href="#">Архив</a>
+                    <a href="#">Обратная связь</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-12 footer"><p style="text-align: center">My blog (с) 2015</p></div>
-            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 footer"><p style="text-align: center">My blog (с) 2015</p></div>
         </div>
     </div>
 </div>
-
-{% for script in this.getJs() %}
-    <script type="text/javascript" src="{{ script }}"></script>
-{% endfor %}
 </body>
 </html>

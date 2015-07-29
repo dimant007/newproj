@@ -1,7 +1,8 @@
 entities:
   Article:
     fields:
-      name: {entity: string}
-      image: {entity: string_image}
-      short_description: {entity: string}
-      full_description: {entity: string}
+      name: {type: string}
+      url: {type: string_url}
+      image: {type: string_image}
+      short_description: {type: string}
+      full_description: {type: string}
