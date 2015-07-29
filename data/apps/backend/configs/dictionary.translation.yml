@@ -63,3 +63,8 @@ dictionary:
         dbName: ~ 
         adminLogin: ~ 
         adminPassword: ~ 
+
+    Dictionary_Form: 
+      fields: 
+        keyword: ~ 
+        translation: ~ 

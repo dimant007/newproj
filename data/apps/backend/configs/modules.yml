@@ -1,4 +1,7 @@
 modules:
+  articles:
+    name: Статьи
+    entity: Article
   #pages:
   #  name: Страницы
   #  entity: StaticPage

@@ -1,0 +1,7 @@
+entities:
+  Article:
+    fields:
+      name: {entity: string}
+      image: {entity: string_image}
+      short_description: {entity: string}
+      full_description: {entity: string}

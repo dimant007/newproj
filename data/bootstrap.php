@@ -13,5 +13,6 @@ new fvBundle( __DIR__ . "/bundles/facebook" );
 new fvBundle( __DIR__ . "/bundles/vkontakte" );
 new fvBundle( __DIR__ . "/bundles/fv/entities" );
 new fvBundle( __DIR__ . "/bundles/fv/tools" );
+new fvBundle( __DIR__ . "/bundles/articles" );
 
 fvSite::init();

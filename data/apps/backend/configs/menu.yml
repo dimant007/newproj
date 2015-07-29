@@ -1,5 +1,5 @@
 menu:
-  models:
+  articles:
     name: Контент // 0 // Статьи
     link: moduleDefault:list/module=articles
   #users:

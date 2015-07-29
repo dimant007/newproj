@@ -8,13 +8,12 @@ class Layout_Default extends fvLayout
         //$this->view()->lang = Language::getManager()->getCurrentLanguage()->code;
 
         $this->addCSS([
-            "/theme/stylesheets/style.css",
-            "/theme/stylesheets/style2.css"
+            "/theme/stylesheets/bootstrap.css",
+            "/theme/stylesheets/style.css"
         ]);
 
         $this->addJS([
-            "",
-            "/theme/scripts/common.js",
+            "/theme/scripts/common.js"
         ]);
     }
 
