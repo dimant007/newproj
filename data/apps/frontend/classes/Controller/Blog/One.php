@@ -9,11 +9,12 @@
 class Controller_Blog_One extends fvController
 {
     /**
-     * @route /blog/one/{url}
+     * @route /blog/{$url}
+     * @converter $url Entity(Article, url)
      */
 
-    function indexAction($url)
+    function indexAction(Article $entity)
     {
-        $this->view()->record = Article::find(['url' => $url]);
+        $this->view()->article = $entity;
     }
 }

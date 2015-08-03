@@ -8,10 +8,16 @@
  */
 class Article extends fvRoot
 {
+    use Trait_iWebAccess;
 
     function getUrl()
     {
-        return fvUrlGenerator::get('blog-one', ['url' => $this->url->get()]);
+        return "/blog/{$this->url->get()}";
+    }
+
+    function newPost()
+    {
+        return fvUrlGenerator::get('blog-post', ['url' => $this->url->get()]);
     }
 
 }

@@ -1,8 +1,6 @@
-{% for article in articles %}
 <a href="{{ article.getUrl() }}">
     <div>
         <h1>{{ article.name }}</h1>
         <p>{{ article.full_description }}</p>
     </div>
 </a>
-{% endfor %}

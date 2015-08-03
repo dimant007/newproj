@@ -32,6 +32,10 @@ abstract:
       ctime: { type: datetime_ctime }
       weight: { type: int, default: 0 }
 
+  iWebAccess:
+    fields:
+      url: {type: string, unique: true}
+
   iMeta:
     fields:
       title: { type: text }
