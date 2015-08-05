@@ -75,3 +75,7 @@ dictionary:
         netId: ~ 
         ctime: ~ 
         mtime: ~ 
+
+    Dictionary_Form: 
+      fields: 
+        translation: ~ 

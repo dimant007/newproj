@@ -2,7 +2,7 @@ entities:
   Article:
     implements: [ iWebAccess ]
     foreigns:
-      users: {entity: User}
+      users: {entity: User, nullable: true}
     fields:
       name: {type: string}
       image: {type: string_image}

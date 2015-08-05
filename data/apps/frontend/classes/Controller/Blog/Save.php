@@ -15,10 +15,7 @@ class Controller_Blog_Save extends fvController
     {
         if ($this->getRequest()->isPost()) {
             $data = $this->getRequest()->getRequestParameter('data', 'array', []);
-
             $blog = new Article($data);
-
-            var_dump($data);
             try {
                 if ($blog->isValid()) {
                     $blog->save();
@@ -27,7 +24,15 @@ class Controller_Blog_Save extends fvController
 
                 throw new Exception('error');
             } catch (Exception $e) {
-                return 'error';
+                $result = [];
+                foreach($blog->getFields() as $key=>$field) {
+                    if(!$field->isValid()) {
+                        echo $key;
+                        $result[] = $key;
+                    }
+                }
+
+                return implode(", ", $result);
             }
         }
     }
