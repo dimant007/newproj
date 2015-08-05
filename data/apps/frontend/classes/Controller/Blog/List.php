@@ -9,7 +9,7 @@
 class Controller_Blog_List extends fvController
 {
     /**
-     * @route /blogs
+     * @route /blog
      */
 
     function indexAction()

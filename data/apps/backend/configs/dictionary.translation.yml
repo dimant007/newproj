@@ -29,6 +29,7 @@ dictionary:
         role: ~ 
         short_description: ~ 
         full_description: ~ 
+        netId: ~ 
 
       validators: 
         required: Это поле нужно заполнить 
@@ -54,3 +55,23 @@ dictionary:
         isActive: ~ 
         userId: ~ 
         url: ~ 
+
+    AdminBundle\Form\Auth\SignIn: 
+      labels: 
+        name: ~ 
+        submit: ~ 
+
+      fields: 
+        login: ~ 
+        password: ~ 
+
+    User_Form: 
+      fields: 
+        name: ~ 
+        surname: ~ 
+        image: ~ 
+        email: ~ 
+        isActive: ~ 
+        netId: ~ 
+        ctime: ~ 
+        mtime: ~ 

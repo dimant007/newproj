@@ -2,6 +2,9 @@ modules:
   articles:
     name: Статьи
     entity: Article
+  users:
+    name: Пользователи
+    entity: User
   #pages:
   #  name: Страницы
   #  entity: StaticPage

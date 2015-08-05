@@ -2,6 +2,10 @@ menu:
   articles:
     name: Контент // 0 // Статьи
     link: moduleDefault:list/module=articles
+  users:
+    name: Контент // 0 // Пользователи
+    link: moduleDefault:list/module=users
+
 
   #users:
   #  icon: user

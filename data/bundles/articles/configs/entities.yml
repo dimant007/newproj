@@ -1,8 +1,14 @@
 entities:
   Article:
     implements: [ iWebAccess ]
+    foreigns:
+      users: {entity: User}
     fields:
       name: {type: string}
       image: {type: string_image}
       short_description: {type: string}
       full_description: {type: string}
+
+  User:
+    constraints:
+      articles: {entity: Article}

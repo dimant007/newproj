@@ -1,7 +1,8 @@
+<a href="http://newproj.local/blog/save"><button type="button" class="btn btn-primary btn-lg btn-block">Create new article</button></a>
 {% for article in articles %}
     <div class="article">
         <img class="img_article img-thumbnail" src="{{ article.image }}"/>
-        <a class="title" href="#"><h2>{{ article.name }}</h2></a>
+        <a class="title" href="{{ article.getUrl() }}"><h2>{{ article.name }}</h2></a>
         <p>{{ article.short_description }}<a class="link" href="{{ article.getUrl() }}">Show full article</a></p>
         <div style="clear:both;"></div>
     </div>

@@ -1,0 +1,10 @@
+<form action="{{ path('blog-save') }}" method="post">
+    Title of the article:<br>
+    <input type="text" name="articles[name]"><br>
+    Write short description for it:<br>
+    <input type="text" name="articles[short_description]"><br>
+    Write all you wanna see in this article:<br>
+    <input type="text" name="articles[full_description]">
+    <br><br>
+    <input type="submit" name="submit-button" value="Submit">
+</form>

@@ -14,10 +14,4 @@ class Article extends fvRoot
     {
         return "/blog/{$this->url->get()}";
     }
-
-    function newPost()
-    {
-        return fvUrlGenerator::get('blog-post', ['url' => $this->url->get()]);
-    }
-
 }
