@@ -1,10 +1,15 @@
 <form action="{{ path('blog-save') }}" method="post">
-    Title of the article:<br>
-    <input type="text" name="data[name]"><br>
-    Write short description for it:<br>
-    <input type="text" name="data[short_description]"><br>
-    Write all you wanna see in this article:<br>
-    <input type="text" name="data[full_description]">
-    <br><br>
-    <input type="submit" name="submit-button" value="Submit">
+    <div class="form-group">
+        <label for="title">Title of the article:</label>
+        <input type="text" name="data[name]" class="form-control" id="title" placeholder="title">
+    </div>
+    <div class="form-group">
+        <label for="short_desc">Write short description for it:</label>
+        <input type="text" name="data[short_description]" class="form-control" id="short_desc" placeholder="short description">
+    </div>
+    <div class="form-group">
+        <label for="full_desc">Write all you wanna see in this article:</label>
+        <textarea class="form-control" name="data[full_description]" rows="10" id="full_desc" placeholder="full description"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
 </form>
