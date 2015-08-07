@@ -30,6 +30,10 @@ dictionary:
         short_description: ~ 
         full_description: ~ 
         netId: ~ 
+        mail: ~ 
+        comment: ~ 
+        articleId: ~ 
+        time: ~ 
 
       validators: 
         required: Это поле нужно заполнить 
@@ -79,3 +83,13 @@ dictionary:
     Dictionary_Form: 
       fields: 
         translation: ~ 
+        keyword: ~ 
+
+    Comment_Form: 
+      fields: 
+        name: ~ 
+        mail: ~ 
+        comment: ~ 
+        articleId: ~ 
+        url: ~ 
+        time: ~ 

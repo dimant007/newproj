@@ -5,11 +5,15 @@
     </div>
     <div class="form-group">
         <label for="short_desc">Write short description for it:</label>
-        <input type="text" name="data[short_description]" class="form-control" id="short_desc" placeholder="short description">
+        <textarea class="form-control" name="data[short_description]" rows="4" id="short_desc" placeholder="short description"></textarea>
     </div>
     <div class="form-group">
         <label for="full_desc">Write all you wanna see in this article:</label>
         <textarea class="form-control" name="data[full_description]" rows="10" id="full_desc" placeholder="full description"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="url">Generate url:</label>
+        <input type="text" name="data[url]" class="form-control" id="url" placeholder="url">
     </div>
     <button type="submit" class="btn btn-default">Submit</button>
 </form>

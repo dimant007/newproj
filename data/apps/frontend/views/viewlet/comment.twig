@@ -1,0 +1,25 @@
+<div id="comment">
+    {% for comment in article.comments.get() %}
+        {{ comment.widget() }}
+    {% endfor %}
+</div>
+
+<div id="addCommentContainer">
+    <p>Add comment:</p>
+    <form action="{{ path('blog-comment') }}" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" name="data[name]" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="mail">E-mail:</label>
+            <input type="text" name="data[mail]" class="form-control" id="mail" placeholder="Enter your e-mail address">
+        </div>
+        <div class="form-group">
+            <label for="comment">Write all you wanna see in this article:</label>
+            <textarea class="form-control" name="data[comment]" rows="7" id="comment" placeholder="Write your comment"></textarea>
+        </div>
+        <input type="hidden" name="data[articleId]" value="{{ article.getPk() }}">
+        <button type="submit" class="btn btn-primary btn-lg active">Send</button>
+    </form>
+</div>

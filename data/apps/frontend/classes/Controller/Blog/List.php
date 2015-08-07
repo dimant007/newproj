@@ -15,6 +15,5 @@ class Controller_Blog_List extends fvController
     function indexAction()
     {
         $this->view()->articles = Article::findAll();
-
     }
 }

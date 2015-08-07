@@ -3,12 +3,24 @@ entities:
     implements: [ iWebAccess ]
     foreigns:
       users: {entity: User, nullable: true}
+    constraints:
+      comments: {entity: Comment}
     fields:
       name: {type: string}
       image: {type: string_image}
       short_description: {type: string}
       full_description: {type: string}
+      url: {type: string}
 
   User:
     constraints:
       articles: {entity: Article}
+
+  Comment:
+    foreigns:
+      article: {entity: Article}
+    fields:
+      name: {type: string}
+      mail: {type: string}
+      comment: {type: string}
+      time: {type: datetime}

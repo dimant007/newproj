@@ -17,4 +17,5 @@ class Controller_Blog_One extends fvController
     {
         $this->view()->article = $entity;
     }
+
 }

@@ -5,6 +5,9 @@ modules:
   users:
     name: Пользователи
     entity: User
+  comments:
+    name: Комментарии
+    entity: Comment
   #pages:
   #  name: Страницы
   #  entity: StaticPage

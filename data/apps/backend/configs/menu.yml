@@ -5,6 +5,9 @@ menu:
   users:
     name: Контент // 0 // Пользователи
     link: moduleDefault:list/module=users
+  comments:
+    name: Контент // 0 // Комментарии
+    link: moduleDefault:list/module=comments
 
 
   #users:
